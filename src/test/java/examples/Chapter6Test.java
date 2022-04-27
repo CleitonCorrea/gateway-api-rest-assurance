@@ -1,15 +1,16 @@
 package examples;
 
+import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.options;
+import static io.restassured.RestAssured.given;
+
 import com.github.tomakehurst.wiremock.junit.WireMockRule;
-import dataentities.Location;
-import io.restassured.http.ContentType;
+
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 
-import static com.github.tomakehurst.wiremock.core.WireMockConfiguration.options;
-import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.hasSize;
+import dataentities.Location;
+import io.restassured.http.ContentType;
 
 public class Chapter6Test {
 
